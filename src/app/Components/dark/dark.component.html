@@ -1,0 +1,74 @@
+<div class="dark body-dark">
+  <div class="calculator cal-dark">
+    <!-- ......................................  -->
+    <div class="upper-content upper-dark">
+      <div class="top">
+        <p
+          style="width: 70%; text-align: left"
+          id="label_text1"
+          class="text label"
+        >
+          {{ label }}
+        </p>
+      </div>
+      <div class="text display">
+        <p id="input_dark">{{ display }}</p>
+      </div>
+    </div>
+    <!-- ......................................  -->
+    <div class="buttons">
+      <div class="row">
+        <button (click)="clearScreen()" class="btn-dark C">C</button>
+        <button (click)="signChanged()" class="btn-dark pls-min">+/-</button>
+        <button (click)="operatorClicked('%')" class="btn-dark mod">%</button>
+        <button (click)="operatorClicked('/')" class="btn-dark div">/</button>
+      </div>
+      <div class="row">
+        <button (click)="numberClicked('7')" class="btn-normal-dark seven">
+          7
+        </button>
+        <button (click)="numberClicked('8')" class="btn-normal-dark eight">
+          8
+        </button>
+        <button (click)="numberClicked('9')" class="btn-normal-dark nine">
+          9
+        </button>
+        <button (click)="operatorClicked('X')" class="btn-dark mul">X</button>
+      </div>
+      <div class="row">
+        <button (click)="numberClicked('4')" class="btn-normal-dark four">
+          4
+        </button>
+        <button (click)="numberClicked('5')" class="btn-normal-dark five">
+          5
+        </button>
+        <button (click)="numberClicked('6')" class="btn-normal-dark six">
+          6
+        </button>
+        <button (click)="operatorClicked('-')" class="btn-dark min">-</button>
+      </div>
+      <div class="row">
+        <button (click)="numberClicked('1')" class="btn-normal-dark one">
+          1
+        </button>
+        <button (click)="numberClicked('2')" class="btn-normal-dark two">
+          2
+        </button>
+        <button (click)="numberClicked('3')" class="btn-normal-dark three">
+          3
+        </button>
+        <button (click)="operatorClicked('+')" class="btn-dark sum">+</button>
+      </div>
+      <div class="row">
+        <button (click)="numberClicked('0')" class="btn-normal-dark zero">
+          0
+        </button>
+        <button (click)="numberClicked('.')" class="btn-normal-dark dot">
+          .
+        </button>
+        <button class="space-dark"></button>
+        <button (click)="equals('=')" class="eql">=</button>
+      </div>
+    </div>
+  </div>
+</div>

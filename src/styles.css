@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100;1,200&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+    to right top,
+    rgb(173, 241, 156),
+    rgb(124, 241, 222)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-container,
+.dark,
+.light {
+  position: relative;
+  height: 30rem;
+  width: 18rem;
+  border-radius: 20px;
+  /* padding: 1rem; */
+}
+
+.dark,
+.light,
+.switch-outer {
+  position: absolute;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+
+  height: 100%;
+
+  /* overflow: hidden; */
+  transition: 0.7s;
+  background: white;
+}
+.buttons {
+  height: 19rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.row {
+  width: 17rem;
+  display: flex;
+  margin: 2px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.row button {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  height: 3rem;
+  width: 3rem;
+  text-align: center;
+}
+
+.text {
+  width: 18rem;
+  text-align: end;
+  padding: 0 10px 0 10px;
+  transition: 0.5s;
+}
+
+.label {
+  max-width: 15rem;
+  /* border: black solid 1px; */
+  border-radius: 20px;
+  margin: 5px 0 0 5px;
+  word-wrap: break-word;
+  /* font-weight: normal; */
+}
+
+.display {
+  margin-top: 1rem;
+}
+
+/* ...............................................  */
+.display p {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  word-wrap: break-word;
+  line-height: 2rem;
+  height: 5rem;
+}
+
+.upper-content {
+  max-width: 18rem;
+  height: 30%;
+  /* border: red solid 2px; */
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.eql {
+  background-color: rgb(24, 212, 163);
+  color: black;
+}

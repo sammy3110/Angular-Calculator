@@ -1,0 +1,26 @@
+.light {
+  background-color: beige;
+}
+.btn-light {
+  background-color: rgb(228, 252, 246);
+  transition: 0.7s;
+}
+
+.btn-light:hover {
+  background-color: rgb(184, 241, 227);
+}
+
+.upper-light {
+  background-color: rgb(228, 252, 246);
+  transition: 0.7s;
+}
+
+.btn-normal-light,
+.space-light {
+  background-color: white;
+  transition: 0.7s;
+}
+
+.btn-normal-light:hover {
+  background-color: rgb(247, 247, 247);
+}

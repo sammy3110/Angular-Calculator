@@ -1,0 +1,19 @@
+<div class="main-container">
+  <app-switch></app-switch>
+  <app-dark
+    [display]="display"
+    [label]="label"
+    [operator]="operator"
+    [var1]="var1"
+    [equalPressed]="equalPressed"
+    (darkEmmiter)="changeDetected($event)"
+  ></app-dark>
+  <app-light
+    [display]="display"
+    [label]="label"
+    [operator]="operator"
+    [var1]="var1"
+    [equalPressed]="equalPressed"
+    (lightEmmiter)="changeDetected($event)"
+  ></app-light>
+</div>

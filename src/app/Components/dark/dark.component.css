@@ -1,0 +1,36 @@
+.dark {
+  z-index: 2;
+  background-color: black;
+  color: rgb(24, 212, 163);
+  clip-path: circle(0% at 100% 0%);
+  transition: all 1s ease-out;
+}
+
+.darkAnimate {
+  clip-path: circle(80% at 100% 0%);
+}
+
+.cal-dark {
+  background: rgb(46, 57, 81);
+}
+
+.upper-dark {
+  background-color: rgb(33, 43, 65);
+}
+.btn-dark {
+  background-color: rgb(33, 43, 65);
+  color: rgb(24, 212, 163);
+}
+.btn-dark:hover {
+  background-color: rgb(22, 28, 43);
+}
+.space-dark {
+  background-color: rgb(46, 57, 81);
+}
+.btn-normal-dark {
+  background-color: rgb(46, 57, 81);
+  color: antiquewhite;
+}
+.btn-normal-dark:hover {
+  background-color: rgb(38, 47, 68);
+}
