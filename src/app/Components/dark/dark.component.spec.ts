@@ -8,8 +8,9 @@ describe('DarkComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [DarkComponent],
-    }).compileComponents();
+      declarations: [ DarkComponent ]
+    })
+    .compileComponents();
   });
 
   beforeEach(() => {
